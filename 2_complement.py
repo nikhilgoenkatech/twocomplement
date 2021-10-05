@@ -22,7 +22,7 @@ def twocomplement(logger, hostName):
 
 def read_file(logger, filename):
     try:
-        new_file_line = "Tenant UUID,Hour,Usage Type,Host Name,Host Units\n"
+        new_file_line = "Tenant UUID,Hour,Usage Type,Value,Host Name,Host Units\n"
         logger.debug("Entering read_file")
         with open(filename,"r", encoding='utf-8-sig') as csvfile:
             reader=csv.DictReader(csvfile)
